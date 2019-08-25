@@ -188,6 +188,37 @@ body {
   color: inherit;
   background: hsl(176, 68%, 64%);
   color: hsl(0, 0%, 100%);
+  margin-bottom: 20%;
+}
+
+.features {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+.feature {
+  padding-bottom: 25%;
+  text-align: center;
+  margin: 0 auto;
+  width: 95%
+
+}
+
+.feature h1 {
+  font-weight: 700;
+  font-size: large;
+  line-height: 3;
+}
+
+.feature p {
+  width: 95%;
+  margin: 0 auto;
+  line-height: 1.4;
+}
+
+.feature img {
+  height: 83px;
 }
 
 p,
@@ -253,6 +284,12 @@ ul {
     padding: 2%;
     font-size: 20px;
   }
+  .feature {
+    padding-bottom: 15%;
+  }
+  .feature p {
+    width: 60%;
+  }
 }
 
 @media (min-width: 1400px) {
@@ -272,6 +309,23 @@ ul {
 
   .content-info button {
     width: 25%;
-    padding: 1.5%;
+    padding: 1.1%;
   }
+  .features {
+    flex-flow: row wrap;
+    width: 80%;
+    margin: 0 auto;
+
+  }
+  .feature {
+    width: 50%
+  }
+
+  .feature h1 {
+
+  }
+  .feature p {
+
+  }
+
 }
